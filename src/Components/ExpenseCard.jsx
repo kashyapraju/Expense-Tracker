@@ -17,19 +17,19 @@ const ExpenseCard = ({ transactions }) => {
     
     return (
         <Container>
-            <Card>
-                <CardContent>
-                    <Typography>Income</Typography>
-                    <Typography style={{ color: 'green' }}>+₹{income}</Typography>
-                </CardContent>
-            </Card>
-            <Card>
-                <CardContent>
-                    <Typography>Expense</Typography>
-                    <Typography style={{ color: 'red' }}>-₹{expense}</Typography>
-                </CardContent>
-            </Card>
-        </Container>
+        <Card>
+            <CardContent>
+                <Typography>Income</Typography>
+                <Typography style={{ color: 'green' }}>+₹{income}</Typography>
+            </CardContent>
+        </Card>
+        <Card>
+            <CardContent>
+                <Typography>Expense</Typography>
+                <Typography style={{ color: 'red' }}>-₹{expense}</Typography>
+            </CardContent>
+        </Card>
+    </Container>
     )
 }
 

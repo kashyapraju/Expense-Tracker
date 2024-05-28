@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-import { Typography, Box, styled } from '@mui/material';
+import { Typography,  styled } from '@mui/material';
 import './App.css';
 
 import Balance from './Components/Balance';
@@ -16,27 +16,12 @@ const Header = styled(Typography)`
   color: #021406cf;
   font-size: 41px;
   text-transform: uppercase;
-  box-shadow: 0 4px 6px rgb(5, 87, 31,1);* Change the values as needed */
+  box-shadow: 0 4px 6px rgb(5, 87, 31,1);
   margin: 20px;
 
- 
+`
 
-  
-`;
 
-const Component = styled(Box)`
-  background: #FFF;
-  padding: 10px;
-  border-radius: 20px;
-  display: flex;
-  width: 800px;
-  & > div {
-    padding: 10px;
-    width: 50%;
-    height: 70vh;
-  }
-}
-`;
 
 function App() {
   
@@ -63,19 +48,19 @@ function App() {
   return (
 
    
-    <div className="App" >
+    <div className="main-app" >
      
-      <Header>Expense Tracker</Header>
-      <Component className = "raj">
-        <Box className = "shadow">
+      <Header className='header'>Expense Tracker</Header>
+      <div className = "raj">
+        <div className = "shadow">
           <Balance transactions={transactions} />
           <ExpenseCard transactions={transactions} />
           <NewTransaction addTransaction={addTransaction}/>
-        </Box>
-        <Box className = "shadow">
+        </div>
+        <div className = "shadow">
           <Transactions transactions={transactions} deleteTransaction={deleteTransaction}/>
-        </Box>
-      </Component>
+        </div>
+      </div>
 
     </div>
   );

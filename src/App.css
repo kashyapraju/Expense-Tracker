@@ -1,11 +1,16 @@
-.App {
-  text-align: center;
+.main-app {
+   text-align: center;
   box-shadow: 0 4px 6px rgba(5, 0.1, 4, 1); /* Change the values as needed */
   margin: 30px;
-  
+  width: fit-content;
   margin-top:22px;
-}
+  padding-top: 10px;
 
+}
+.shadow{
+  width: fit-content;
+  padding: 2rem;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -39,4 +44,19 @@
   to {
     transform: rotate(360deg);
   }
+}
+.raj{
+ 
+  background: #FFF;
+}
+@media(max-width:760px){
+  .raj{
+   display: flex;
+   flex-direction: column;
+   margin-left: 0px;
+  }
+  .header{
+    width: 20rem;
+  }
+  
 }

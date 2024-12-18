@@ -1,12 +1,20 @@
 .main-app {
    text-align: center;
-  box-shadow: 0 4px 6px rgba(5, 0.1, 4, 1); /* Change the values as needed */
+  /* box-shadow: 0 4px 6px rgba(5, 0.1, 4, 1);  */
   margin: 30px;
   width: fit-content;
   margin-top:22px;
+  margin-left: 200px;
   padding-top: 10px;
 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
 }
+
+
 .shadow{
   width: fit-content;
   padding: 2rem;
@@ -48,6 +56,11 @@
 .raj{
  
   background: #FFF;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  max-width: 800px;
 }
 @media(max-width:760px){
   .raj{
@@ -59,4 +72,79 @@
     width: 20rem;
   }
   
+}
+
+
+.raj {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 23px;
+  margin-left: 300px;
+  margin-top: -3px;
+  background: #FFF;
+  gap: 20px;
+  width: 100%;
+  max-width: 800px;
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Main app layout */
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f0f2f5;
+}
+
+
+
+.raj {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  max-width: 800px;
+}
+
+/* Shadow container for balance and transactions */
+.shadow {
+  background: #ffffff;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Header customization */
+.header {
+  color: #004d40;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .raj {
+      flex-direction: column;
+      gap: 15px;
+  }
+
+  .header {
+      font-size: 2rem;
+  }
 }
